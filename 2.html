@@ -2,23 +2,28 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+
+
 <style>
 * {box-sizing: border-box;}
 
 body {
   margin: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
 }
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #82CAFF;
   padding: 10px 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -26,41 +31,47 @@ body {
   line-height: 25px;
   border-radius: 4px;
 }
-
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
 }
-
 .header a:hover {
-  background-color: #ddd;
-  color: black;
+  /*background-color: #ddd;*/
+  color: #3090C7;
 }
-
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
 .header-right {
   float: right;
 }
-
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
     /*display: block;*/
     text-align: left;
   }
-
   .header-right {
     float: none;
   }
 }
+div.example {
+  text-align: center;
+}
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+
 </style>
 </head>
 <body>
 
+<!-- header -->
 <div class="header">
   <a href="#default" class="logo">Enter name here</a>
   <div class="header-right">
@@ -72,12 +83,9 @@ body {
     <a href="5.html">5</a>
   </div>
 </div>
+<!-- header -->
 
-<div style="padding-left:20px">
-  <h1>Responsive Header</h1>
-  <p>Resize the browser window to see the effect.</p>
-  <p>Some content..</p>
-</div>
+<!-- ******************** END RESPONSIVE GALLERY ************************* -->
 
 
 
