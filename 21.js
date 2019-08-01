@@ -210,4 +210,9 @@ var confetti = {
 		}
 	}
 })();
-confetti.start(0, 200);
+
+window.addEventListener("resize",function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+})
+confetti.start(0, 350);
