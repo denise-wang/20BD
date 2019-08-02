@@ -3,9 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css?family=Kavivanar&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yatra+One&display=swap" rel="stylesheet">
+
 
 <style>
 * {box-sizing: border-box;}
@@ -14,7 +15,6 @@ body {
   font-size: 30px;
   text-align: center;
   background-color: black;
-  font-family: 'Sacramento', cursive;
 }
 
 
@@ -100,6 +100,8 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-family: 'Yatra One', cursive;
+
 }
 hr {
   margin: auto;
@@ -111,7 +113,7 @@ hr {
 <body>
 
 <div class="header">
-  <a href="#default" class="logo">Enter name here</a>
+  <a href="#default" class="logo" style="font-family:'Cedarville Cursive', cursive; font-size:35px;" >Crystal Gong</a>
   <div class="header-right">
     <a href="index.html">Home</a>
     <a href="1.html">1</a>
@@ -133,7 +135,7 @@ hr {
     <!-- <p>Logo</p> -->
   </div>
   <div class="middle">
-    <p id="demo" style="font-size:30px"></p>
+    <p id="demo" style="font-size:25px"></p>
     <hr>
     <h1>UNTIL YOU'RE 21!</h1>
   </div>
@@ -159,8 +161,8 @@ var countdownfunction = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + " days: " + hours + " hours: "
+  + minutes + " minutes: " + seconds + " seconds ";
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(countdownfunction);
