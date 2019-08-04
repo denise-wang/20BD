@@ -13,6 +13,7 @@ body {
   margin: 20px;
   font-family: 'Sacramento', cursive;
   font-size: 30px;
+  background-color: 	dimgray;
 }
 .header {
   overflow: hidden;
@@ -64,6 +65,57 @@ div.example {
     font-size: 30px;
   }
 }
+
+/* GALLERY */
+h2 {
+  text-align: center;
+}
+
+.polaroids {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.polaroid {
+  display: inline-block;
+  margin: 10px ;
+  position: relative;
+  width: auto;
+}
+
+.polaroid img {
+  border: 12px solid #fff;
+  border-bottom: 90px solid #fff; /* change height of caption */
+  -webkit-box-shadow: 3px 3px 3px #888;
+  -moz-box-shadow: 3px 3px 3px #888;
+  box-shadow: 3px 3px 3px #888;
+  height: auto;
+  max-width: 100%;
+}
+
+.polaroid p {
+  color: #888;
+  font: 500 18px/22px Arial, sans-serif;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+/* GALLERY */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+textarea{
+  resize: none;
+}
 </style>
 </head>
 <body>
@@ -82,6 +134,66 @@ div.example {
 </div>
 <!-- header -->
 
+<!-- ********************  RESPONSIVE GALLERY ************************* -->
+<h2>Polaroid  Image-Gallery with caption - responsive</h2>
+  <div class="polaroids">
+
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+      Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+      </textarea></p>
+    </div>
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+        Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+        </textarea></p>
+   </div>
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+      Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+      </textarea></p>
+  </div>
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+      Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+      </textarea></p>
+    </div>
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+      Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+      </textarea></p>
+    </div>
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+      Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+      </textarea></p>
+    </div>
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+      Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+      </textarea></p>
+    </div>
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+      Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+      </textarea></p>
+    </div>
+    <div class="polaroid">
+            <img class="rig-img" src="https://i.postimg.cc/T1nz8t39/2-4.jpg" style="width:350px;">
+            <p>Name<br><textarea rows="3" cols="50" position="fixed" resize="none"; readonly>
+      Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense. Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere..
+      </textarea></p>
+    </div>
+
+  </div>
 <!-- ******************** END RESPONSIVE GALLERY ************************* -->
 
 
