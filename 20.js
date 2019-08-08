@@ -215,4 +215,4 @@ window.addEventListener("resize",function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 })
-confetti.start(0, 350);
+confetti.start(0, 350); 
